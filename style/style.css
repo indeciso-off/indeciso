@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #52575D;
+  background-image: url(image/fon.png);
+  background-position: center center;
+  background-size: 1980px;
+}
+
+.content {
+  /*margin-top: 60px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 75px;
+}
+
+.separator {
+  width: 20%;
+  height: 2px; /* Adjust the thickness of the line as needed */
+  background-color: #F6F4E6; /* Adjust the color of the line as needed */
+  margin: 90px 5%; /* Center the line on the page */
+}
+.centered-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-bar {
+  margin-top: 10px;
+  background: #41444B;
+  width: 83%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  border-radius: 30px;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
+}
+
+.navigation-bar a {
+  color: #F6F4E6;
+  text-align: center;
+  font-family: "KhulaRegular";
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  border-radius: 30px;
+}
+
+h1 {
+  font-family: "InterBold";
+  font-size: 96px;
+  color: #FDDB3A;
+  justify-content: center;
+  align-items: center;
+  margin: 200px 0 130px 0;
+}
+
+h2 {
+  font-family: "InterBold";
+  font-size: 28px;
+  color: #FDDB3A;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 40px 0;
+}
+
+h3 {
+  font-family: "InterBold";
+  font-size: 28px;
+  color: #FDDB3A;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-family: "KhulaRegular";
+  font-size: 24px;
+  color: #F6F4E6;
+  text-align: center;
+  width: 83%;
+}
+
+.empty {
+  display: flex;
+  font-family: "KhulaLight";
+  font-size: 18px;
+  color: #F6F4E6;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.accent {
+  font-family: "KhulaSemiBolt";
+  color: #FDDB3A;
+}
+
+.comment {
+  font-family: "KhulaLight";
+  color: #FDDB3A;
+}
+
+.skills-list {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list li {
+  margin: 0 40px 20px 0;
+  max-width: 80%;
+  font-family: "KhulaRegular";
+  font-size: 24px;
+  color: #F6F4E6;
+  padding: 0 40px 0 40px;
+  background-color: #41444B; /* Серый фон */
+  border-radius: 30px; /* Скругленные края */
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+  .skills-list li {
+      max-width: 100%;
+  }
+}
+
+.typing-text {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #F6F4E6; /* You can adjust the color and style of the caret */
+  font-family: 'InterSemiBolt'; /* Using the imported font for the typing effect */
+  font-size: 24px;
+  margin: 0;
+  color: #F6F4E6; /* Text color */
+}
+
+.getintouch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 75px;
+  width: 83%;
+  border-radius: 30px;
+  background: #41444B;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
+}
+
+.inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  min-height: 75px;
+  width: 83%;
+  font-size: 0; 
+}
+
+.inline a img {
+  margin: 0; 
+}
+
+.project {
+  display: flex;
+  margin: 0;
+  min-height: 250px;
+  width: 32%;
+  border-radius: 30px;
+  background-color: #D9D9D940;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
+}
+
+.navigation-bar a.active {
+  /* стили для активного пункта навигации */
+  color: #FDDB3A;
+  /* добавьте другие стили по вашему выбору */
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  min-height: 75px;
+  width: 100%;
+  background: #41444B;
+}
+
+.footer .inline {
+  width: 100%;
+}
+
+.footer p {
+  display: flex;
+  font-family: "KhulaRegular";
+  font-size: 18px;
+  color: #F6F4E6;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@keyframes caret-flash {
+  50% {
+    opacity: 0;
+  }
+}
+  /*Шрифти*/
+@font-face {
+  font-family: InterBold;
+  src: url(fonts/Inter/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: InterSemiBolt;
+  src: url(fonts/Inter/Inter-SemiBold.ttf);
+}
+@font-face {
+  font-family: KhulaLight;
+  src: url(fonts/Khula/Khula-Light.ttf);
+}
+@font-face {
+  font-family: KhulaRegular;
+  src: url(fonts/Khula/Khula-Regular.ttf);
+}
+@font-face {
+  font-family: KhulaSemiBolt;
+  src: url(fonts/Khula/Khula-SemiBold.ttf);
+}
+@font-face {
+  font-family: KhulaBolt;
+  src: url(fonts/Khula/Khula-Bold.ttf);
+}
